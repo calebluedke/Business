@@ -26,7 +26,7 @@ body {
 }
 
 @keyframes floatingdown {
-  0% {top: -60px;}
+  0% {top: -150px;}
   100% {top: 200px;}
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 @keyframes content {
-  0% {left: -1000px;}
+  0% {left: -2000px;}
   100% {left: 0px;}
 }
 
