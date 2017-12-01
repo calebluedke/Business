@@ -1,3 +1,3 @@
 # Business
 Website Assignment
-Due Dec 4 @ midnight
+Due Dec 4
