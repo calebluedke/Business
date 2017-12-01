@@ -94,6 +94,6 @@ button {
 #map {
         height: 400px;
         width: 100%;
-        margin: 20px;
+        margin: 20px auto;
         max-width: 800px;
        }
