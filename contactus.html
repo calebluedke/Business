@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="directory-container">
+    <div class="directory"><a href="main.html">Home</a></div>
+    <div class="directory">Products & Service</div>
+    <div class="directory"><a href="contactus.html">Contact Us</a></div>
+  </div>
+
+  <div class="column-layout">
+    <div class="main-column">
+      <h2>Location</h2>
+      <p>475 E Merrill Ave<br> Fond du Lac, WI 54935</p>
+      <p><b>Phone:</b> 414-555-1212</p>
+      <p><b>Email:</b> info@PCFixIt.com</p>
+    </div>
+
+    <div class="sidebar-two">
+      <h2>Hours of Operation</h2>
+      <p><b>Mon-Fri:</b> 10am - 5pm<br>
+      <b>Sat:</b> 12pm -5pm<br>
+      <b>Sun:</b> Closed</p>
+    </div>
+    
+  </div>
+
+ <div id="map"></div>
+
+  <div class="call-outs-container">
+    <div class="call-out">
+      <h4>Christmas Sale</h4>
+      <p>
+        Christmas is coming and everyone is excited. What better thing to get your mom than a new laptop so she can
+        save all those embarassing pictures of you. From Dec 10th to the 25th all items will be up to 40% off. What
+        an incredible time to get your mom that laptop.
+      </p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="call-out">
+      <h4>Rewards Points</h4>
+      <p>
+        Now you can earn rewards points for being such valuable costomers. Any time you have us fix your PC, buy any 
+        parts from us, or recycle any of your parts, you can earn rewards points that you can redeem for discounts on 
+        anything in the store.
+      </p>
+      <button>Learn More</button>
+    </div>
+
+  </div>
+  <script>
+      function initMap() {
+        var uluru = {lat: 43.7813167, lng: -88.4303183};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8cn28XGZS5yBAoFGfLzWVG0QHPSwzWHk&callback=initMap">
+    </script>
+</body>
+
+</html>
