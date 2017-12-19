@@ -32,8 +32,9 @@
     </div>
   </div>
 
+  <div id="buttondiv"><button id="hidebutton" onclick="hideOffers()">Hide Offers</button></div>
 
-  <div class="call-outs-container">
+  <div id="specialoffers" class="call-outs-container">
     <div class="call-out">
       <h4>Christmas Sale</h4>
       <p>
@@ -55,6 +56,18 @@
     </div>
 
   </div>
+  
+  <script>
+      function hideOffers() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+
+        x.style.display="none";
+        y.style.display="none";
+
+      }
+    </script>
+  
 </body>
 
 </html>
